@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Antoni Skubisz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Antoni Skubisz</strong></a>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/antoni-skubisz/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/askubisz" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Face to Sketch/Sketch to face</h1>
+										<p><i>Tools used: Python (tensorflow, keras, numpy, matplotlib)</i></p>
+									</header>
+
+									<!-- Content -->
+									
+										<h2 id="content">Objective</h2>
+										<p>The main goal of this project was to explore and compare various deep learning models
+											for face sketch synthesis. In addition to applying existing architectures, we aimed
+											to develop a novel approach by employing transfer learning with autoencoders.
+										</p>
+
+										
+										<h2 id="content">Results</h2>
+										<p> We used Chinese University of Hong Kong (CUHK) student face database as our base for training process. We split it in around 70/30 proportion into
+											train and test sets. Our approach involved experimenting with three established generative neural network architectures: sparse autoencoders,
+											convolutional autoencoders, and Pix2Pix (a type of Generative Adversarial Network). Additionally, we explored transfer learning by 
+											fine-tuning the VGG-16 model using our database. The results for the face-to-sketch task are presented below.
+										</p>
+										<center><span class="image"><img src="images/f2sk.png" alt="" width="100%" height="100%"/></span></center>
+
+										<p>
+											Pix2Pix emerged as the top performer among the models we examined, which aligns with expectations considering 
+											its intricate architecture. Conversely, the sparse autoencoder struggled to consistently generate accurate 
+											face sketches. Furthermore, we trained these same models for the sketch-to-face task, reversing the direction of synthesis.
+										</p>
+										<center><span class="image"><img src="images/sk2f.png" alt="" width="100%" height="100%"/></span></center>
+
+										<p>
+
+										</p>
+
+										<h2 id="content">Source code</h2>
+										<p>Code was made in a Jupiter Notebook form and is uploaded along with the models <a href="https://drive.google.com/drive/folders/1uXVBulrFXCiAgRoMclYJ1KOk3pjVzF9E?usp=sharing" target="_blank" rel="noopener noreferrer">here</a></p>
+
+										<h2 id="content">Full report</h2>
+										<p>Click <a href="/uploads/face-sketch.pdf" target="_blank">here</a> to open in a new window.</p>
+										<object data="uploads/face-sketch.pdf" type="application/pdf" frameborder="0" width="100%" height="600px">
+											<embed src="https://drive.google.com/file/d/1LXbWD8hz1NBRaTWPXYNDOd0cOnRFHHW8/preview?usp=sharing" width="100%" height="700px"/> 
+										</object>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<!-- <section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section> -->
+
+							<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Homepage</a></li>
+									<!-- <li><a href="generic.html">Generic</a></li>
+									<li><a href="elements.html">Elements</a></li> -->
+									<li>
+										<span class="opener">Projects</span>
+										<ul>
+											<li><a href="clustering.html">Clustering algorithms comparison</a></li>
+											<li><a href="pong-ai.html">Pong AI</a></li>
+											<li><a href="face2sketch.html">Face to Sketch/Sketch to Face</a></li>
+											<li><a href="#">Convolutional Neural Networks for pneumonia detection</a></li>
+											<li><a href="#">Automated Text Summarisation</a></li>
+											<li><a href="#">Data Engineering Pipeline</a></li>
+										</ul>
+									</li>
+
+								</ul>
+							</nav>
+
+							<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Contact</h2>
+								</header>
+								<!-- <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="mailto:a.skubisz.2d@gmail.com">a.skubisz.2d@gmail.com</a></li>
+									<li class="icon solid fa-phone">+44 736596497<br />
+										+48 728 909 638</li>
+									<!-- <li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+									Nashville, TN 00000-0000</li> -->
+								</ul>
+							</section>
+
+							<!-- Footer -->
+								<!-- <footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer> -->
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
