@@ -32,51 +32,72 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Pong AI</h1>
-										<p><i>Tools used: Python (pygame, neat-python)</i></p>
+										<h1>Convolutional Neural Networks for pneumonia detection</h1>
+										<p><i>Tools used: Python (tensorflow, keras, numpy, pandas)</i></p>
 									</header>
 
 									<!-- Content -->
 									
 										<h2 id="content">Objective</h2>
-										<p>The project's objective is to develop an AI model capable of challenging human players. 
-											To accomplish this, we selected the game of Pong, which we implemented from scratch 
-											using PyGame in Python. Our general goal is to explore various approaches to 
-											building reinforcement learning models, including search algorithms, Q-learning, and the NEAT algorithm.</p>
+										<p>To investigate the notion of convolutional neural networks and its application in pneumonia detection.
+										</p>
 
 										
 										<h2 id="content">Results</h2>
-										<p> In our Pong game we implemented 3 different modes:
-											<ul>
-											<li>PVP</li>
-											<li>Train AI</li>
-											<li>VS AI</li>
-											</ul>
-											PVP offers standard gameplay between two players, where one moves with W and S keys to go up and down,
-											while the other uses arrow keys. In train AI mode, user can build its own reinforcement learning model.
-											The customisable parameters to be chosen by the user are: number of generations for which the neural network
-											will be trained, the activation function used and the type of opponent to be trained against. It can either be
-											trained against itself, or a paddle that strictly follows the y-coordinate of the ball (more challenging). Once the
-											training is finished, the model will get saved to a separate directory
+										<p> Convolutional Neural Networks are a powerful tool in medical imaging for the
+											 detection and classification of various diseases, including pneumonia. For our 
+											 training and testing purposes, we used a dataset of labeled 
+											 X-ray images sourced from Kaggle. We studied two prominent CNN 
+											 architectures, namely AlexNet and VGG-16. After implementing these architectures 
+											 using TensorFlow and conducting training on the dataset, we obtained the following results on the test set:
 										</p>
-										<center><span class="image"><img src="images/train_ai.png" alt="" width="100%" height="100%"/></span></center>
+
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th></th>
+														<th>AlexNet</th>
+														<th>VGG-16</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Accuracy</td>
+														<td>73.1%</td>
+														<td>83.3%</td>
+													</tr>
+													<tr>
+														<td>Precision</td>
+														<td>70.3%</td>
+														<td>79.2%</td>
+													</tr>
+													<tr>
+														<td>Recall</td>
+														<td>98.5%</td>
+														<td>99.5%</td>
+													</tr>
+													<tr>
+														<td>F1 score</td>
+														<td>82%</td>
+														<td>88.2%</td>
+													</tr>
+													</tr>
+												</tbody>
+											</table>
+										
 
 										<p>
-											In the VS AI mode, we have a chance to test our models (we pretrained 8 different models for convenience).
-											The user can choose here one of 3 different types of games: AI vs hardcoded, AI vs AI and Player vs AI.
-											We conducted a tournament among the eight pretrained models, and surprisingly, 
-											the models trained for fewer generations generally performed better. In the end, we found it impossible for
-											a human player to beat the best AI model.
+											
 										</p>
-										<center><span class="image"><img src="images/bracket.jpg" alt="" width="100%" height="100%"/></span></center>
 
 										<h2 id="content">Source code</h2>
-										<p>Source code and instruction how to run the code are on the GitHub <a href="https://github.com/askubisz/pong_ai" target="_blank" rel="noopener noreferrer">here</a></p>
-										
+										<p>Code has been uploaded to GitHub <a href="https://github.com/askubisz/pneumonia_detection" target="_blank" rel="noopener noreferrer">here</a></p>
+
 										<h2 id="content">Full report</h2>
-										<p>Click <a href="/uploads/pong-ai.pdf" target="_blank">here</a> to open in a new window.</p>
-										<object data="uploads/pong-ai.pdf" type="application/pdf" frameborder="0" width="100%" height="600px">
-											<embed src="https://drive.google.com/file/d/1AM8NenU6TdJ-4cuMXOKEqAljvY-ccwyp/preview?usp=sharing" width="100%" height="700px"/> 
+										<p>Click <a href="/uploads/pneumonia.pdf" target="_blank">here</a> to open in a new window.</p>
+										<object data="uploads/pneumonia.pdf" type="application/pdf" frameborder="0" width="100%" height="600px">
+											<embed src="https://drive.google.com/file/d/1SsxIN6HZQfTpU4L7LIdVnDTlainRQ1e2/preview?usp=sharing" width="100%" height="700px"/> 
 										</object>
 
 								</section>

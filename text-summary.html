@@ -32,52 +32,53 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Pong AI</h1>
-										<p><i>Tools used: Python (pygame, neat-python)</i></p>
+										<h1>Automated Text Summarisation</h1>
+										<p><i>Tools used: Python (beautifulsoup, nltk, tkinter, translation)</i></p>
 									</header>
 
 									<!-- Content -->
 									
 										<h2 id="content">Objective</h2>
-										<p>The project's objective is to develop an AI model capable of challenging human players. 
-											To accomplish this, we selected the game of Pong, which we implemented from scratch 
-											using PyGame in Python. Our general goal is to explore various approaches to 
-											building reinforcement learning models, including search algorithms, Q-learning, and the NEAT algorithm.</p>
+										<p>The aim of this project is to perform extractive text summarization in Python. 
+											The input text for summarization can be in the form of a text file or a URL to
+											 a website in any language (we also perform translation). After generating a concise 
+											 summary, we want to visualize the information within the summary.
+										</p>
+
+										<p></p>
 
 										
 										<h2 id="content">Results</h2>
-										<p> In our Pong game we implemented 3 different modes:
-											<ul>
-											<li>PVP</li>
-											<li>Train AI</li>
-											<li>VS AI</li>
-											</ul>
-											PVP offers standard gameplay between two players, where one moves with W and S keys to go up and down,
-											while the other uses arrow keys. In train AI mode, user can build its own reinforcement learning model.
-											The customisable parameters to be chosen by the user are: number of generations for which the neural network
-											will be trained, the activation function used and the type of opponent to be trained against. It can either be
-											trained against itself, or a paddle that strictly follows the y-coordinate of the ball (more challenging). Once the
-											training is finished, the model will get saved to a separate directory
+										<p> The first thing that shows up when we run the program is the GUI presented below. We offer
+											many customisable parameters on the upper right and left corner that affect the size of the
+											summary. In the middle top, we have a place to paste our URL to article that we want to summarise.
+											Alternatively, we can paste our text into a large textbox and press the relevant button.
 										</p>
-										<center><span class="image"><img src="images/train_ai.png" alt="" width="100%" height="100%"/></span></center>
+										
+										<center><span class="image"><img src="images/interface.png" alt="" width="100%" height="100%"/></span></center>
+
+										<p> To illustrate text summarization in action, we present an example of a summary of a BBC article (<a href="https://www.bbc.com/future/article/20230904-how-the-royal-mint-is-turning-electronic-waste-into-gold" target="_blank" rel="noopener noreferrer">link</a>). 
+											This type of summarization, known as extractive summarization, selects sentences directly from the original 
+											article without generating new ones. The selected sentences are those that contain the most frequently 
+											occurring words from the entire article. In the interface below, you can view the generated summary in 
+											the main text box. Other options include viewing the full article or a translated version.
+										</p>
+
+										<center><span class="image"><img src="images/summary.png" alt="" width="100%" height="100%"/></span></center>
+
+										<p> The generated summary is also automatically saved to a .txt file in the same directory. 
+											Additionally, you can create a word cloud of the most frequently used words by simply clicking a button.
+										</p>
+
+										<center><span class="image"><img src="images/word_cloud_summary.png" alt="" width="100%" height="100%"/></span></center>
 
 										<p>
-											In the VS AI mode, we have a chance to test our models (we pretrained 8 different models for convenience).
-											The user can choose here one of 3 different types of games: AI vs hardcoded, AI vs AI and Player vs AI.
-											We conducted a tournament among the eight pretrained models, and surprisingly, 
-											the models trained for fewer generations generally performed better. In the end, we found it impossible for
-											a human player to beat the best AI model.
+											
 										</p>
-										<center><span class="image"><img src="images/bracket.jpg" alt="" width="100%" height="100%"/></span></center>
 
 										<h2 id="content">Source code</h2>
-										<p>Source code and instruction how to run the code are on the GitHub <a href="https://github.com/askubisz/pong_ai" target="_blank" rel="noopener noreferrer">here</a></p>
-										
-										<h2 id="content">Full report</h2>
-										<p>Click <a href="/uploads/pong-ai.pdf" target="_blank">here</a> to open in a new window.</p>
-										<object data="uploads/pong-ai.pdf" type="application/pdf" frameborder="0" width="100%" height="600px">
-											<embed src="https://drive.google.com/file/d/1AM8NenU6TdJ-4cuMXOKEqAljvY-ccwyp/preview?usp=sharing" width="100%" height="700px"/> 
-										</object>
+										<p>Code has been uploaded to GitHub <a href="https://github.com/askubisz/automated-text-summarization" target="_blank" rel="noopener noreferrer">here</a></p>
+
 
 								</section>
 

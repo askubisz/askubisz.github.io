@@ -32,51 +32,49 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Pong AI</h1>
-										<p><i>Tools used: Python (pygame, neat-python)</i></p>
+										<h1>Data Engineering Pipeline</h1>
+										<p><i>Tools used: Docker, Nifi, Spark, MySQL, Grafana</i></p>
 									</header>
 
 									<!-- Content -->
 									
 										<h2 id="content">Objective</h2>
-										<p>The project's objective is to develop an AI model capable of challenging human players. 
-											To accomplish this, we selected the game of Pong, which we implemented from scratch 
-											using PyGame in Python. Our general goal is to explore various approaches to 
-											building reinforcement learning models, including search algorithms, Q-learning, and the NEAT algorithm.</p>
+										<p>To undertake a small pipeline development project that considers core elements of the
+											 data engineering lifecycle (ingestion, transformation and serving).
+											Investigate and report on the design and implementation of an 
+											end-to-end data processing system that can serve data analytics/ML outcomes to address a particular challenge.
+										</p>
+
+										<p>
+										</p>
 
 										
 										<h2 id="content">Results</h2>
-										<p> In our Pong game we implemented 3 different modes:
-											<ul>
-											<li>PVP</li>
-											<li>Train AI</li>
-											<li>VS AI</li>
-											</ul>
-											PVP offers standard gameplay between two players, where one moves with W and S keys to go up and down,
-											while the other uses arrow keys. In train AI mode, user can build its own reinforcement learning model.
-											The customisable parameters to be chosen by the user are: number of generations for which the neural network
-											will be trained, the activation function used and the type of opponent to be trained against. It can either be
-											trained against itself, or a paddle that strictly follows the y-coordinate of the ball (more challenging). Once the
-											training is finished, the model will get saved to a separate directory
+										<p> Our data pipeline aimed to develop a model predicting the salary of United States citizens based on several
+											 factors, including gender, age, education, and marital status. Additionally, we created a dashboard to 
+											 visualise trends within the U.S. To achieve this, we sourced sample data from Census Microdata, which 
+											 is accessible through the official government website's API. In the image below, you can see how users 
+											 were able to modify various variables to view predictions for different scenarios.
 										</p>
-										<center><span class="image"><img src="images/train_ai.png" alt="" width="100%" height="100%"/></span></center>
+										
+										<center><span class="image"><img src="images/model.png" alt="" width="100%" height="100%"/></span></center>
 
 										<p>
-											In the VS AI mode, we have a chance to test our models (we pretrained 8 different models for convenience).
-											The user can choose here one of 3 different types of games: AI vs hardcoded, AI vs AI and Player vs AI.
-											We conducted a tournament among the eight pretrained models, and surprisingly, 
-											the models trained for fewer generations generally performed better. In the end, we found it impossible for
-											a human player to beat the best AI model.
+											The data pipeline begins with Apache Nifi, where JSON-formatted data is ingested, transformed, 
+											and then stored in a MySQL database. Apache Spark accesses this database to train a machine 
+											learning model. Additionally, we've connected the database to Grafana, where we've built a dashboard 
+											to visualize compelling insights from the data.
 										</p>
-										<center><span class="image"><img src="images/bracket.jpg" alt="" width="100%" height="100%"/></span></center>
+
+										<center><span class="image"><img src="images/dashboard.png" alt="" width="100%" height="100%"/></span></center>
 
 										<h2 id="content">Source code</h2>
-										<p>Source code and instruction how to run the code are on the GitHub <a href="https://github.com/askubisz/pong_ai" target="_blank" rel="noopener noreferrer">here</a></p>
-										
+										<p>Code has been uploaded to GitHub <a href="https://github.com/askubisz/data_eng_pipeline" target="_blank" rel="noopener noreferrer">here</a></p>
+
 										<h2 id="content">Full report</h2>
-										<p>Click <a href="/uploads/pong-ai.pdf" target="_blank">here</a> to open in a new window.</p>
-										<object data="uploads/pong-ai.pdf" type="application/pdf" frameborder="0" width="100%" height="600px">
-											<embed src="https://drive.google.com/file/d/1AM8NenU6TdJ-4cuMXOKEqAljvY-ccwyp/preview?usp=sharing" width="100%" height="700px"/> 
+										<p>Click <a href="/uploads/data_pipeline_report.pdf" target="_blank">here</a> to open in a new window.</p>
+										<object data="uploads/data_pipeline_report.pdf" type="application/pdf" frameborder="0" width="100%" height="600px">
+											<embed src="https://drive.google.com/file/d/1vl8sGeTGhOvfUPywSbSTGSpKinOKe4Xq/preview?usp=sharing" width="100%" height="700px"/> 
 										</object>
 
 								</section>
